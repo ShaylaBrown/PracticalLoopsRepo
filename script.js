@@ -1,6 +1,12 @@
 console.log("Practial Loops")
-console.log("Loop through all numbers from 1-100")
+let a = 1
+
 for (let a = 1; a <= 100; a++) {
-	console.log(a)
+    console.log(a)
 }
-console.log("Log Fizz if number divivisible by 3")
+for (var i = 1; i < 101; i++) {
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
