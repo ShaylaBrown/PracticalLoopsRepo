@@ -42,3 +42,24 @@ let row3 = ("\n63, Blaine, Quiz Master, 58")
 let row4 = ("\n98, Bill, Doctor’s Assistant, 26")
 console.log(row1, row2, row3, row4)
 
+console.log("=====Feeling Loopy 2==========")
+let cell5 = ("Index")
+let cell6 = ("Mass (kg)")
+let cell7 = ("Spring 1 (m)")
+let cell8 = ("Spring 2 (m)")
+console.log(cell5, cell6, cell7, cell8);
+
+let row5 = ("\n1, 0.00, 0.050, 0.050")
+let row6 = ("\n2, 0.49, 0.066, 0.066")
+let row7 = ("\n3, 0.98, 0.087, 0.080")
+let row8 = ("\n4, 1.47, 0.116, 0.108")
+let row9 = ("\n5, 1.96, 0.142, 0.138")
+let row10 =("\n6, 2.45, 0.166, 0.158")
+let row11 = ("\n7, 2.94, 0.193, 0.174")
+let row12 = ("\n8, 3.43, 0.204, 0.192")
+let row13 = ("\n9, 3.92, 0.226, 0.205")
+let row14 = ("\n10, 4.41, 0.238, 0.232")
+console.log(row5, row6, row7, row8, row9, row10, row11, row12, row13, row14)
+
+
+
