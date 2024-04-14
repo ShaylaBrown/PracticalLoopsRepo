@@ -11,23 +11,26 @@ for (var i = 1; i < 101; i++) {
     else console.log(i);
 }
 console.log("==========Part 2: Prime Time===========")
-for (let n = 2; n <= 3; n++) {
-    let isPrime = true
-
-    for (let j = 2; j < n; j++) {
-        if (n % j === 0) {
-            // if this is true, it is NOT a prime number
-            isPrime = false
-            break
-        }
-    }
-
-    if (isPrime === true) {
-        console.log(`${n}` + isPrime)
-    }
 
 
+const n = 101;
+const isPrime = (n) => {
+   let sqrtnum = Math.floor(Math.sqrt(n));
+   let prime = n !== 1;
+   for(let i = 2; i < sqrtnum + 1; i++){
+      if(n % i === 0){
+         prime = false;
+         break;
+      };
+   };
+   return prime;
 }
+const nextPrime = (n = 1) => {
+   while(!isPrime(++n)){
+   };
+   return n;
+};
+console.log(nextPrime(n));
 
 console.log("=====Feeling Loopy==========")
 let cell1 = ("ID")
@@ -54,7 +57,7 @@ let row6 = ("\n2, 0.49, 0.066, 0.066")
 let row7 = ("\n3, 0.98, 0.087, 0.080")
 let row8 = ("\n4, 1.47, 0.116, 0.108")
 let row9 = ("\n5, 1.96, 0.142, 0.138")
-let row10 =("\n6, 2.45, 0.166, 0.158")
+let row10 = ("\n6, 2.45, 0.166, 0.158")
 let row11 = ("\n7, 2.94, 0.193, 0.174")
 let row12 = ("\n8, 3.43, 0.204, 0.192")
 let row13 = ("\n9, 3.92, 0.226, 0.205")
